@@ -13,5 +13,4 @@ public interface OrderRepository extends JpaRepository<Order, Long>{
 			+ " WHERE obj.status = 0 ORDER BY obj.moment ASC")
 	List<Order> findOrdersWithProducts();
 	
-	
 }
